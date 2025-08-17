@@ -23,7 +23,7 @@ app.use(
 );
 
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true }));
 //database connection
 mongoose
   .connect(MONGO_URI)
